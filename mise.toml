@@ -1,0 +1,6 @@
+[tools]
+node = "20"
+
+[env]
+_.file = ".env.local" # Mise chargera automatiquement ce fichier
+NODE_ENV = "development"
