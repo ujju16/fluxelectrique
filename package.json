@@ -6,7 +6,8 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
+    "dev": "next dev -H  0.0.0.0",
+    "deploy": "./scripts/deploy.sh",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
