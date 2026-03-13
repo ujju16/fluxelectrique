@@ -29,7 +29,7 @@ export default function Home() {
             href="#contact"
             className="px-8 py-3 rounded-md bg-[var(--color-primary)] text-white font-medium hover:opacity-90 transition-opacity"
           >
-            Discuter d'un projet
+            Discuter d&apos;un projet
           </Link>
           <Link
             href="#services"
@@ -71,7 +71,7 @@ export default function Home() {
           <div className="text-3xl mb-4 text-[var(--color-accent)]">⚙️</div>
           <h2 className="text-xl font-bold mb-3">Expertise Matérielle</h2>
           <p className="text-[var(--text-muted)] leading-relaxed">
-            Diagnostic matériel avancé, micro-soudure de composants de surface (CMS) et réparation d'équipements informatiques.
+            Diagnostic matériel avancé, micro-soudure de composants de surface (CMS) et réparation d&apos;équipements informatiques.
           </p>
         </div>
         </FadeIn>
