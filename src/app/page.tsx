@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 export default function Home() {
   return (
@@ -16,12 +16,12 @@ export default function Home() {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-          L'ingénierie informatique <br className="hidden md:block" />
+          L&apos;ingénierie informatique <br className="hidden md:block" />
           <span className="text-[var(--color-primary)]">sur mesure.</span>
         </h1>
 
         <p className="text-xl text-[var(--text-muted)] max-w-2xl mb-10">
-          De la carte mère au cloud. Développement d'applications web et mobiles, infrastructures sécurisées et expertise matérielle.
+          De la carte mère au cloud. Développement d&apos;applications web et mobiles, infrastructures sécurisées et expertise matérielle.
         </p>
 
         <div className="flex gap-4">
@@ -44,31 +44,37 @@ export default function Home() {
       <section id="services" className="w-full max-w-6xl px-6 py-24 grid grid-cols-1 md:grid-cols-3 gap-8">
 
         {/* Pilier 1 : Dev */}
-        <div className="bg-[var(--bg-card)] p-8 rounded-xl border border-slate-800 hover:border-[var(--color-primary)]/50 transition-colors">
+        <FadeIn delay={0.1}>
+        <div className="bg-[var(--bg-card)] p-8 rounded-xl border border-slate-800 hover:border-[var(--color-primary)]/50 transition-colors h-full flex flex-col">
           <div className="text-3xl mb-4 text-[var(--color-accent)]">💻</div>
           <h2 className="text-xl font-bold mb-3">Ingénierie Logicielle</h2>
           <p className="text-[var(--text-muted)] leading-relaxed">
-            Création d'applications web ultra-rapides (NextJS) et d'applications mobiles natives (Android / Kotlin) pensées pour la performance.
+            Création d&apos;applications web ultra-rapides (NextJS) et d&apos;applications mobiles natives (Android / Kotlin) pensées pour la performance.
           </p>
         </div>
+        </FadeIn>
 
         {/* Pilier 2 : Infra */}
-        <div className="bg-[var(--bg-card)] p-8 rounded-xl border border-slate-800 hover:border-[var(--color-primary)]/50 transition-colors">
+        <FadeIn delay={0.3}>
+        <div className="bg-[var(--bg-card)] p-8 rounded-xl border border-slate-800 hover:border-[var(--color-primary)]/50 transition-colors h-full flex flex-col">
           <div className="text-3xl mb-4 text-[var(--color-accent)]">🔒</div>
           <h2 className="text-xl font-bold mb-3">Infrastructure & Sécurité</h2>
           <p className="text-[var(--text-muted)] leading-relaxed">
             Déploiement de serveurs virtuels (Proxmox), conteneurisation (Docker) et création de réseaux chiffrés.
           </p>
         </div>
+        </FadeIn>
 
         {/* Pilier 3 : Hardware */}
-        <div className="bg-[var(--bg-card)] p-8 rounded-xl border border-slate-800 hover:border-[var(--color-primary)]/50 transition-colors">
+        <FadeIn delay={0.5}>
+        <div className="bg-[var(--bg-card)] p-8 rounded-xl border border-slate-800 hover:border-[var(--color-primary)]/50 transition-colors h-full flex flex-col">
           <div className="text-3xl mb-4 text-[var(--color-accent)]">⚙️</div>
           <h2 className="text-xl font-bold mb-3">Expertise Matérielle</h2>
           <p className="text-[var(--text-muted)] leading-relaxed">
             Diagnostic matériel avancé, micro-soudure de composants de surface (CMS) et réparation d'équipements informatiques.
           </p>
         </div>
+        </FadeIn>
 
       </section>
 
