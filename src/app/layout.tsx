@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Header from "@/components/Header";
 
 // Configuration des polices
 const geistSans = Geist({
@@ -34,8 +35,8 @@ export default function RootLayout({
           geistMono.variable
         )}
       >
-        {/* Ici on pourra ajouter le <Header /> plus tard */}
-        <main>{children}</main>
+        <Header />
+        <main className="pt-16">{children}</main>
         {/* Ici on pourra ajouter le <Footer /> plus tard */}
       </body>
     </html>
